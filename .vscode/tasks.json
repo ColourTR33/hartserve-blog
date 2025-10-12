@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Hugo: dev server", "type": "shell", "command": "hugo server -D" },
+    { "label": "Docker: build (local)", "type": "shell", "command": "docker build -t ghcr.io/colourtr33/hartserve-blog:local ." },
+    { "label": "Docker: run (local)", "type": "shell", "command": "docker run --rm -p 8080:80 ghcr.io/colourtr33/hartserve-blog:local" },
+    { "label": "Docker: tag latest", "type": "shell", "command": "docker tag ghcr.io/colourtr33/hartserve-blog:local ghcr.io/colourtr33/hartserve-blog:latest" },
+    { "label": "Docker: login GHCR", "type": "shell", "command": "echo $GITHUB_TOKEN | docker login ghcr.io -u colourtr33 --password-stdin" },
+    { "label": "Docker: push latest", "type": "shell", "command": "docker push ghcr.io/colourtr33/hartserve-blog:latest" }
+  ]
+}

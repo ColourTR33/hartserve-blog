@@ -1,0 +1,16 @@
+baseURL = "https://blog.thehartleys.uk/"
+title = "Mark Hartley"
+theme = "PaperMod"
+enableRobotsTXT = true
+defaultContentLanguage = "en"
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  description = "Enterprise Architect | AI • Cloud • BPM"
+  author = "Mark Hartley"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  defaultTheme = "auto"
