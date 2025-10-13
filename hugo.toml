@@ -1,4 +1,4 @@
-baseURL = "https://blog.thehartleys.uk/"
+baseURL = "https://mark.thehartleys.uk/blog/"
 title = "Mark Hartley"
 theme = "PaperMod"
 enableRobotsTXT = true
