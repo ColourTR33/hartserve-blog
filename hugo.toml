@@ -1,5 +1,6 @@
 baseURL = "https://mark.thehartleys.uk/blog/"
-canonifyURLs = true 
+canonifyURLs = true
+relativeURLs = false
 title = "Mark Hartley"
 theme = "PaperMod"
 enableRobotsTXT = true
