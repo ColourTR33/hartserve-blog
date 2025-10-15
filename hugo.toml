@@ -19,7 +19,8 @@ mainSections = ["posts"]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   defaultTheme = "auto"
-  profileMode = false
+  [params.profileMode]
+  enabled = false
 
 [menu]
   [[menu.main]]
