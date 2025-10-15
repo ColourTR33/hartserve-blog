@@ -22,7 +22,6 @@ COPY . .
 RUN git submodule update --init --recursive || true
 
 # ---- SUPER VERBOSE DIAGNOSTICS ----
-# If anything is wrong (theme/content missing, bad front matter), we will SEE it.
 RUN set -euxo pipefail; \
     echo "== uname ==" && uname -a; \
     echo "== hugo version ==" && /usr/local/bin/hugo version; \
@@ -33,7 +32,11 @@ RUN set -euxo pipefail; \
     echo "== content dir ==" && (ls -la content || true); \
     echo "== first few theme files ==" && (find themes -maxdepth 2 -type f | head -n 20 || true); \
     echo "== running hugo =="; \
-    /usr/local/bin/hugo --baseURL="${HUGO_BASEURL}" --minify --debug
+    HUGO_ENV=production /usr/local/bin/hugo \
+    --baseURL="${HUGO_BASEURL}" \
+    --minify \
+    --log --verbose \
+    --printI18nWarnings --printPathWarnings
 
 # ---------- Runtime ----------
 FROM nginx:alpine
