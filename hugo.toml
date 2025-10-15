@@ -27,6 +27,12 @@ mainSections = ["posts"]
     imageTitle = "Me"
     imageWidth = 200
     imageHeight = 200
+  [params.homeInfoParams]
+    enabled = false
+  [params.homeInfoParams]
+    Title = "Hi, I’m Mark"
+    Content = "Enterprise Architect | AI • Cloud • BPM"
+    enabled = true
 
 [menu]
   [[menu.main]]
