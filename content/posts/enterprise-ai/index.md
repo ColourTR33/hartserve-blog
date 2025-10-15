@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 date: 2025-10-15
-draft: false
+draft: tr
 tags: [about]
 categories: [career]
 description: "About me and my professional experience"
