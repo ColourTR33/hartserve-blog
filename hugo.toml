@@ -5,6 +5,7 @@ title = "Mark Hartley"
 theme = "PaperMod"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
+mainSections = ["posts"]
 
 [pagination]
   pagerSize = 10
@@ -16,3 +17,10 @@ defaultContentLanguage = "en"
   ShowReadingTime = true
   ShowShareButtons = true
   defaultTheme = "auto"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url  = "/blog/posts/"
+    weight = 1
+
