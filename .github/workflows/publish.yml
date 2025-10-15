@@ -5,19 +5,19 @@ on:
     branches: [main]
     paths:
       - "**/*.md"
-      - "hugo.toml"
-      - "nginx.conf"
-      - "Dockerfile"
-      - ".github/workflows/publish.yml" # was build.yml
-      - "themes/**"
-      - "assets/**"
       - "content/**"
+      - "assets/**"
       - "layouts/**"
+      - "themes/**"
+      - "hugo.toml"
+      - "Dockerfile"
+      - "nginx.conf"
+      - ".github/workflows/publish.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
-  packages: write # required for ghcr.io push
+  packages: write
 
 env:
   IMAGE_NAME: ghcr.io/colourtr33/hartserve-blog
@@ -27,9 +27,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout (with submodules)
         uses: actions/checkout@v4
         with:
           submodules: recursive
