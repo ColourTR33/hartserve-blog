@@ -20,7 +20,13 @@ mainSections = ["posts"]
   ShowBreadCrumbs = true
   defaultTheme = "auto"
   [params.profileMode]
-  enabled = false
+    enabled = true
+    title = "Mark Hartley"
+    subtitle = "Enterprise Architect | AI • Cloud • BPM"
+    imageUrl = "profile.jpg"      # put file under /static/
+    imageTitle = "Me"
+    imageWidth = 200
+    imageHeight = 200
 
 [menu]
   [[menu.main]]
@@ -28,3 +34,8 @@ mainSections = ["posts"]
     name = "Posts"
     url = "/posts/"
     weight = 10
+
+
+
+
+
