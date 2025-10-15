@@ -11,11 +11,13 @@ mainSections = ["posts"]
   pagerSize = 10
 
 [params]
-  env = "production"
   description = "Enterprise Architect | AI • Cloud • BPM"
   author = "Mark Hartley"
   ShowReadingTime = true
   ShowShareButtons = true
+  mainSections = ["posts"]
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
   defaultTheme = "auto"
 
 [menu]
@@ -23,4 +25,3 @@ mainSections = ["posts"]
     name = "Posts"
     url  = "/blog/posts/"
     weight = 1
-
