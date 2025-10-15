@@ -19,9 +19,11 @@ mainSections = ["posts"]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   defaultTheme = "auto"
+  profileMode = false
 
 [menu]
   [[menu.main]]
+    identifier = "posts"
     name = "Posts"
-    url  = "/blog/posts/"
-    weight = 1
+    url = "/posts/"
+    weight = 10
