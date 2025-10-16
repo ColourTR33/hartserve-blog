@@ -29,8 +29,12 @@ mainSections = ["posts"]
     imageWidth = 200
     imageHeight = 200
   [params.homeInfoParams]
-    Title = "Hi, I’m Mark"
-    Content = "Enterprise Architect | AI • Cloud • BPM"
+    Title = "Hello, I’m Mark Hartley"
+    Content = "Over the past twenty years, I’ve had the privilege of leading enterprise architecture and digital transformation initiatives for some of the world’s most recognised organisations. My work spans industries — from financial services and pharmaceuticals to telecoms and government — and focuses on bridging strategy, technology, and execution.
+
+I work closely with executives and delivery teams alike to define architectures that are secure, scalable, and built for real-world impact.
+
+This blog shares perspectives, frameworks, and lessons learned from delivering technology change at global scale.”
     enabled = false
 
 [menu]
