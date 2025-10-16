@@ -37,7 +37,7 @@ mainSections = ["posts"]
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
-    url = "posts/"
+    url = "/blog/posts/"
     weight = 10
 
 
