@@ -1,4 +1,5 @@
 baseURL = "https://mark.thehartleys.uk/blog/"
+publishDir = "public/blog"
 canonifyURLs = true
 relativeURLs = false
 title = "Mark Hartley"
