@@ -45,6 +45,11 @@ mainSections = ["posts"]
     name = "Other Posts"
     url = "/blog/posts/"
     weight = 10
+  [[menu.main]]
+  identifier = "cv"
+  name = "Curriculum Vitae"
+  url = "cv/mark-hartley-cv.pdf"
+  weight = 20
 
 
 
