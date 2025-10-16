@@ -20,6 +20,7 @@ mainSections = ["posts"]
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   defaultTheme = "auto"
+
   [params.profileMode]
     enabled = false
     title = "Mark Hartley"
@@ -28,9 +29,10 @@ mainSections = ["posts"]
     imageTitle = "Me"
     imageWidth = 200
     imageHeight = 200
+
   [params.homeInfoParams]
     Title = "Welcome!"
-    Content = "I'm Mark Hartley, a strategic Enterprise Architect and Solution Strategist with over two decades of experience designing and delivering enterprise platforms across AI, Cloud, BPM, and low-code technologies.  I’ve worked with some of the world’s most recognised organisations — from financial institutions and global pharma leaders to telecoms and government — helping executive teams translate strategy into scalable, secure, and innovative solutions.  This blog is a space to share ideas, frameworks, and practical insights drawn from years of working at the intersection of technology, business, and transformation.”
+    Content = """I'm Mark Hartley, a strategic Enterprise Architect and Solution Strategist with over two decades of experience designing and delivering enterprise platforms across AI, Cloud, BPM, and low-code technologies. I’ve worked with some of the world’s most recognised organisations — from financial institutions and global pharma leaders to telecoms and government — helping executive teams translate strategy into scalable, secure, and innovative solutions. This blog is a space to share ideas, frameworks, and practical insights drawn from years of working at the intersection of technology, business, and transformation."""
     enabled = false
 
 [menu]
@@ -39,13 +41,9 @@ mainSections = ["posts"]
     name = "Other Posts"
     url = "/blog/posts/"
     weight = 10
+
   [[menu.main]]
-  identifier = "cv"
-  name = "Curriculum Vitae"
-  url = "cv/mark-hartley-cv.pdf"
-  weight = 20
-
-
-
-
-
+    identifier = "cv"
+    name = "Curriculum Vitae"
+    url = "/cv/mark-hartley-cv.pdf"
+    weight = 20
