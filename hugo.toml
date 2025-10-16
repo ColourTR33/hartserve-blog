@@ -21,7 +21,7 @@ mainSections = ["posts"]
   ShowBreadCrumbs = true
   defaultTheme = "auto"
   [params.profileMode]
-    enabled = true
+    enabled = false
     title = "Mark Hartley"
     subtitle = "Enterprise Architect | AI • Cloud • BPM"
     imageUrl = "profile.jpg"      # put file under /static/
@@ -31,7 +31,7 @@ mainSections = ["posts"]
   [params.homeInfoParams]
     Title = "Hi, I’m Mark"
     Content = "Enterprise Architect | AI • Cloud • BPM"
-    enabled = true
+    enabled = false
 
 [menu]
   [[menu.main]]
