@@ -37,4 +37,4 @@ COPY nginx.conf /etc/nginx/conf.d/blog.conf
 COPY --from=builder /site/public/ /usr/share/nginx/html/
 
 EXPOSE 80
-HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://127.0.0.1/ || exit 1
+HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://127.0.0.1/blog/ || exit 1
