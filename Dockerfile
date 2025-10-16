@@ -9,11 +9,21 @@ ARG TARGETARCH
 RUN apk add --no-cache ca-certificates curl tar git libc6-compat libstdc++
 
 # Install the correct Hugo (extended) binary for the platform
-RUN curl -fsSL -o /tmp/hugo.tar.gz \
-    https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-${TARGETARCH}.tar.gz \
-    && tar -xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo \
-    && chmod +x /usr/local/bin/hugo \
-    && /usr/local/bin/hugo version
+# Install the correct Hugo (extended) binary for the platform (works with or without buildx)
+RUN set -eux; \
+    ARCH="${TARGETARCH:-}"; \
+    if [ -z "$ARCH" ]; then \
+    case "$(apk --print-arch)" in \
+    x86_64)  ARCH=amd64 ;; \
+    aarch64) ARCH=arm64 ;; \
+    *) echo "Unsupported arch: $(apk --print-arch)"; exit 1 ;; \
+    esac; \
+    fi; \
+    curl -fsSL -o /tmp/hugo.tar.gz \
+    "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-${ARCH}.tar.gz"; \
+    tar -xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo; \
+    chmod +x /usr/local/bin/hugo; \
+    /usr/local/bin/hugo version
 
 WORKDIR /site
 COPY . .
