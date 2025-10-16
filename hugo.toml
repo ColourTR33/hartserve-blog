@@ -6,7 +6,7 @@ title = "Mark Hartley"
 theme = "PaperMod"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
-mainSections = ["posts"]
+mainSections = ["posts", "cv"]
 
 [pagination]
   pagerSize = 10
@@ -26,13 +26,13 @@ mainSections = ["posts"]
     title = "Mark Hartley"
     subtitle = "Enterprise Architect | AI • Cloud • BPM"
     imageUrl = "profile.jpg"      # put file under /static/
-    imageTitle = "Me"
+    imageTitle = "Mark Hartley"
     imageWidth = 200
     imageHeight = 200
 
   [params.homeInfoParams]
     Title = "Welcome!"
-    Content = """I'm Mark Hartley, a strategic Enterprise Architect and Solution Strategist with over two decades of experience designing and delivering enterprise platforms across AI, Cloud, BPM, and low-code technologies. I’ve worked with some of the world’s most recognised organisations — from financial institutions and global pharma leaders to telecoms and government — helping executive teams translate strategy into scalable, secure, and innovative solutions. This blog is a space to share ideas, frameworks, and practical insights drawn from years of working at the intersection of technology, business, and transformation."""
+    Content = """I'm Mark Hartley, an Enterprise Architect and Solution Strategist with over two decades of experience designing and delivering enterprise platforms across AI, Cloud, BPM, and low-code technologies. I’ve worked with some of the world’s most recognised organisations — from financial institutions and global pharma leaders to telecoms and government — helping executive teams translate strategy into scalable, secure, and innovative solutions. This blog is a space to share ideas, frameworks, and practical insights drawn from years of working at the intersection of technology, business, and transformation."""
     enabled = false
 
 [menu]
