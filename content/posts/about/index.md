@@ -6,7 +6,7 @@ tags: [about]
 categories: [career]
 description: "About me and my professional experience"
 cover:
-  image: "hero.jpg"     # add hero.jpg next to index.md
+  image: "Mark_Hartley_02.jpg"     # add hero.jpg next to index.md
   alt: "About me"
   caption: "Enterprise architecture - doing the heavy lifting."
   relative: true
