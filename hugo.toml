@@ -43,7 +43,15 @@ mainSections = ["posts", "cv"]
     weight = 10
 
   [[menu.main]]
+    name = "Series"
+    url = "/series/enterprise-ai-design-patterns/"
+    weight = 20
+
+  [[menu.main]]
     identifier = "cv"
     name = "Curriculum Vitae"
     url = "/cv/mark-hartley-cv.pdf"
-    weight = 20
+    weight = 30
+
+[taxonomies]
+  series = "series"

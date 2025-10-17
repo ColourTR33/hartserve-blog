@@ -41,7 +41,7 @@ Seeking senior or principal architecture positions that combine strategic platfo
 ###### June 2015 – Present
 Appian: Gartner Magic Quadrant Leader for Low-Code Automation.
 
-As a senior Architect within Appian’s EMEA division, I lead a teams of domain architects towards the design and delivery of enterprise-grade low-code and automation solutions, integrating cloud, data, and AI capabilities across major clients.  I am also responsible for the corporation's global delivery framework of enterprise architecture consultancy and manage a programme of coaching and enabling future architects at Appian EMEA.
+As a senior Architect within Appian’s EMEA division, I lead teams of domain architects towards the design and delivery of enterprise-grade low-code and automation solutions, integrating cloud, data, and AI capabilities across major clients. I am also responsible for the corporation's global delivery framework of enterprise architecture consultancy and manage a programme of coaching and enabling future architects at Appian EMEA.
 
 ##### Key Achievements:
  - GSK – Defined digital engagement architecture for global clinical trials; created scalable governance model for Appian-based GxP platforms.
@@ -66,7 +66,7 @@ Directed the BPM consulting practice delivering architecture, QA, and project de
  - Led £2 million transformation programme across bespoke systems, CRM, and business process optimisation.
  - Delivered UK’s first SMS recycling locator and an integrated carbon calculator.
  - Managed internal and external delivery teams and vendor contracts.
- - Embeded agile delivery methodology into the development capability.
+ - Embedded agile delivery methodology into the development capability.
 
 ### NFU Mutual – Development Manager
 ###### 2000 – Mar 2007
