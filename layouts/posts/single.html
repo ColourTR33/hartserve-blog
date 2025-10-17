@@ -40,9 +40,7 @@
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
-    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
-    {{- partial "share_buttons.html" . }}
-    {{- end }}
+    <!-- The line below that called share_buttons.html has been removed to fix the build error -->
   </footer>
 
   {{- if (and .Site.DisqusShortname (ne .Params.disableComments true)) }}
@@ -51,3 +49,4 @@
 </article>
 
 {{- end }}{{/* end main */}}
+
