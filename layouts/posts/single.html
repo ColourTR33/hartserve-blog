@@ -1,0 +1,53 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<span class="entry-isdraft">&nbsp;&nbsp;[draft]</span>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">{{ partial "post_meta.html" . }}</div>
+    {{- end }}
+  </header> 
+
+  <!-- This is our custom addition -->
+  <!-- It will display the series box right after the post header -->
+  {{ partial "series.html" . }}
+  <!-- End of custom addition -->
+
+  {{- if .Params.ShowToc }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  <div class="post-content">
+    {{- .Content -}}
+  </div>
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_buttons.html" . }}
+    {{- end }}
+  </footer>
+
+  {{- if (and .Site.DisqusShortname (ne .Params.disableComments true)) }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

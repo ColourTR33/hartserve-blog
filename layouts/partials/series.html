@@ -1,0 +1,17 @@
+{{ $seriesName := .Params.series }}
+{{ with $seriesName }}
+  {{ $seriesPages := index .Site.Taxonomies.series (index $seriesName 0) }}
+  {{ if gt (len $seriesPages) 1 }}
+    <div style="border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; margin-bottom: 24px;">
+      <h3 style="margin-top: 0; font-size: 1.1rem;">Part of the "{{ index $seriesName 0 | title }}" series</h3>
+      <ol style="padding-left: 20px; margin-bottom: 0;">
+        {{ range $seriesPages.Pages.ByDate }}
+          <li style="{{ if eq .Permalink $.Permalink }}font-weight: bold;{{ end }} margin-bottom: 5px;">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ if eq .Permalink $.Permalink }} <span style="font-weight: normal; color: #888; font-size: 0.9em; margin-left: 4px;">(You are here)</span>{{ end }}
+          </li>
+        {{ end }}
+      </ol>
+    </div>
+  {{ end }}
+{{ end }}
