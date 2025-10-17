@@ -23,10 +23,6 @@ Generative AI is not just another software deployment; it is the integration of 
 
 ## AI Functions & Applications
 ** - Part 1 - Foundational AI Concepts**
-   - Types of AI: Choosing the right tool for the job
-   - Core components: Query, Context and Prompt
-   - The Unit of Cost: Understanding and Valuing Tokens
-   - The nature of AI: Managing Non-Determinism
  - Part 2: Architectural Patterns & Implementation
  - Part 3: Enterprise-Grade Considerations
 

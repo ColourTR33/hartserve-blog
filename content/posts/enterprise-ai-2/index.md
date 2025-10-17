@@ -24,9 +24,6 @@ Generative AI is not just another software deployment; it is the integration of 
 ## AI Functions & Applications
  - Part 1 - Foundational AI Concepts
  **- Part 2: Architectural Patterns & Implementation**
-   - RAG: Grounding AI in Enterprise Reality
-   - Strategic Token Optimisation
-   - Managing Long-Term Memory: Context Save Points
  - Part 3: Enterprise-Grade Considerations
 
 ## Part 2: Architectural Patterns & Implementation

@@ -24,12 +24,6 @@ Generative AI is not just another software deployment; it is the integration of 
  - Part 1 - Foundational AI Concepts
  - Part 2: Architectural Patterns & Implementation
  **- Part 3: Enterprise-Grade Considerations**
-   - Model Selection Strategy
-   - Security: Protecting Prompts and Data
-   - Performance in High-Volume Scenarios
-   - LLMOps: Managing the AI Lifecycle
-   - Observability, Governance and Cost Management
-   - The Human Factor: Change Management and User Adoption
 
 ## Part 3: Enterprise-Grade Considerations
 ### Model Selection Strategy
