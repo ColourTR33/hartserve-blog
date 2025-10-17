@@ -43,9 +43,7 @@
     <!-- The line below that called share_buttons.html has been removed to fix the build error -->
   </footer>
 
-  {{- if (and .Site.DisqusShortname (ne .Params.disableComments true)) }}
-  {{- partial "comments.html" . }}
-  {{- end }}
+  <!-- The comments section that was causing the error has been removed. -->
 </article>
 
 {{- end }}{{/* end main */}}
