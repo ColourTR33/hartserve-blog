@@ -21,7 +21,6 @@ permissions:
 
 env:
   IMAGE_NAME: ghcr.io/colourtr33/hartserve-blog
-  CONTAINER_NAME: hartserve-blog
   HUGO_BASEURL: https://mark.thehartleys.uk/blog/
   HUGO_VERSION: 0.151.0
 
@@ -61,34 +60,5 @@ jobs:
             HUGO_VERSION=${{ env.HUGO_VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
- # --- NEW DEPLOYMENT JOB ---
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build # This ensures the build job finishes first
-    steps:
-      - name: Deploy to Server
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            # Log in to GitHub Container Registry
-            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            
-            # Pull the latest image
-            docker pull ${{ env.IMAGE_NAME }}:latest
-            
-            # Stop and remove the old container if it exists
-            docker stop ${{ env.CONTAINER_NAME }} || true
-            docker rm ${{ env.CONTAINER_NAME }} || true
-            
-            # Run the new container
-            docker run -d \
-              --name ${{ env.CONTAINER_NAME }} \
-              -p 80:80 \
-              --restart always \
-              ${{ env.IMAGE_NAME }}:latest
-            
-            # Clean up old, unused images
-            docker image prune -af
+  # Note: Deployment is handled automatically by FluxCD image automation.
+  # No manual deployment step needed - Flux detects new images and updates the cluster.
