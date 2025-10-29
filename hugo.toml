@@ -50,7 +50,7 @@ mainSections = ["posts", "cv"]
   [[menu.main]]
     identifier = "cv"
     name = "Curriculum Vitae"
-    url = "/cv/mark-hartley-cv.pdf"
+    url = "/blog/cv/mark-hartley-cv.pdf"
     weight = 30
 
 [taxonomies]
