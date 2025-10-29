@@ -1,5 +1,5 @@
 ---
-title: "PART 3: Enterprise AI Design Patterns: A Field Guide for Architects"
+title: "Part 3: Enterprise-Grade Considerations for AI"
 date: 2025-09-14
 draft: false
 tags: ["RAG", "LLMOps", "Security", "Token Optimization", "Architecture", "AI"]
@@ -11,13 +11,11 @@ cover:
   caption: "Enterprise architecture - doing the heavy lifting."
   relative: true
 showToc: true
-series: ["Enterprise AI Design Patterns"]
+series: ["Enterprise AI Design Patterns: A Field Guide for Architects"]
 weight: 3 # 2, 3 for next parts
 
 ---
-# Enterprise AI Design Patterns
 
-## Part 3: Enterprise-Grade Considerations
 ### Model Selection Strategy
 The choice of model has profound implications for cost, performance, and compliance.
 

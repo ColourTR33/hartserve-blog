@@ -1,5 +1,5 @@
 ---
-title: "PART 2: Enterprise AI Design Patterns: A Field Guide for Architects"
+title: "PPart 2: Architectural Patterns & Implementation"
 date: 2025-08-30
 draft: false
 tags: ["RAG", "LLMOps", "Security", "Token Optimization", "Architecture", "AI"]
@@ -12,13 +12,10 @@ cover:
   caption: "Enterprise architecture - doing the heavy lifting."
   relative: true
 showToc: true
-series: ["Enterprise AI Design Patterns"]
+series: ["Enterprise AI Design Patterns: A Field Guide for Architects"]
 weight: 2 # 2, 3 for next parts
 
 ---
-# Enterprise AI Design Patterns
-
-## Part 2: Architectural Patterns & Implementation
 ### RAG: Grounding AI in Enterprise Reality
 **Retrieval-Augmented Generation (RAG)** is the single most important architectural pattern for enterprise AI. It allows LLMs to answer questions based on specific, private company data without needing to be retrained. It works like an "open-book exam" for the AI and makes the difference between faithfulness and relevancy to help avoid hallucinated synthesis.
 
