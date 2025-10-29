@@ -1,5 +1,5 @@
 ---
-title: "Enterprise AI Design Patterns: A Field Guide for Architects"
+title: "PART 1: Enterprise AI Design Patterns: A Field Guide for Architects"
 date: 2025-08-16
 draft: false
 tags: ["RAG", "LLMOps", "Security", "Token Optimization", "Architecture", "AI"]
@@ -18,13 +18,7 @@ weight: 1 # 2, 3 for next parts
 ---
 # Enterprise AI Design Patterns
 
-## Executive Summary
 Generative AI is not just another software deployment; it is the integration of a non-deterministic, reasoning workforce into existing business processes. Success hinges on more than technical acumen. It requires a strategic approach to grounding models in enterprise data (Context), managing their unpredictable nature, optimizing for cost (Tokens), and securing the new interfaces they create. This series of posts guides architects in navigating these complexities to deliver tangible business value.
-
-## AI Functions & Applications
-** - Part 1 - Foundational AI Concepts**
- - Part 2: Architectural Patterns & Implementation
- - Part 3: Enterprise-Grade Considerations
 
 ## Part 1: Foundational AI Concepts
 ### Types of AI: Choosing the Right Tool for the Job
