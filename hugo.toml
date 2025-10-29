@@ -44,7 +44,7 @@ mainSections = ["posts", "cv"]
 
   [[menu.main]]
     name = "Series"
-    url = "/series/enterprise-ai-design-patterns/"
+    url = "/blog/series/enterprise-ai-design-patterns/"
     weight = 20
 
   [[menu.main]]
