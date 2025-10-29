@@ -21,6 +21,7 @@ permissions:
 
 env:
   IMAGE_NAME: ghcr.io/colourtr33/hartserve-blog
+  CONTAINER_NAME: hartserve-blog
   HUGO_BASEURL: https://mark.thehartleys.uk/blog/
   HUGO_VERSION: 0.151.0
 
